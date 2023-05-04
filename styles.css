@@ -1,0 +1,203 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1543007630-9710e4a00a20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+.maincontainer{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    background-color: rgba(208, 155, 56, 0.77);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:20px;
+    border-radius:20px;
+    border:none;
+    width:60%;
+    opacity:0;
+}
+
+h1{
+    font-weight: bold;
+    color:#461111;
+    font-size:55px;
+    text-shadow: #B3541E 2px 1px 1px;
+    font-family: 'Lora', serif;
+    margin-top:7px;
+    margin-bottom:1px;
+}
+.placement{
+    display: flex;
+    flex-direction: column;
+    width:500px;
+}
+.billAmount{
+    display: flex;
+    justify-content: space-between;
+
+}
+.numberOfPeople{
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+.billHeading, .peopleHeading{
+    color:#461111;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: #DAA520 3px 2px 2px;
+    font-family: 'Lora', serif;
+}
+.bill{
+    border-radius:20px;
+    border:none;
+    font-size: 15px;
+    margin:5px;
+    height:50px;
+    background-color: rgba(245,228,173, 0.8);
+    align-self: center;
+    font-family: 'Lora', serif;
+}
+.people{
+    border-radius:20px;
+    border:none;
+    font-size: 15px;
+    margin:5px;
+    height:50px;
+    background-color: rgba(245,228,173, 0.8);
+    align-self: center;
+    font-family: 'Lora', serif;
+}
+.results{
+    display:flex;
+    margin:20px;
+}
+.billPerPerson{
+    background-color:#461111;
+    padding:10px 20px;
+    margin-right:15px;
+    width:200px;
+    height:150px;
+    border-radius:20px;
+}
+.tipsPerPerson{
+    background-color: #461111;
+    padding:10px 20px;
+    margin-right:15px;
+    width:200px;
+    height:150px;
+    border-radius:20px;
+}
+.totalPerPerson{
+    background-color:#461111;
+    padding:10px 20px;
+    width:200px;
+    height:150px;
+    border-radius:20px;
+}
+.addTip{
+    background-color: black;
+    border:	none;
+    border-radius: 20px;;
+    padding:20px;
+    margin:5px;
+    width:40%;
+    color:#DAA520;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+}
+.tip{
+    display:none;
+    background-color: rgba(245,228,173, 0.8);
+    font-family: 'Lora', serif;
+    padding:10px;
+    margin:2px;
+    width:40%;
+    border-radius: 20px;;
+    font-size: 20px;
+}
+.calculate{
+        background-color: black;
+        color:#DAA520;
+        font-family: 'Lora', serif;
+        border:	none;
+        border-radius: 20px;;
+        padding:20px;
+        margin:5px;
+        width:40%;
+        font-size: 20px;
+    }
+.blocksheading{
+    color:#DAA520;
+    font-family: 'Lora', serif;
+    font-size: 25px;
+}
+.billPP, .tipsPP, .totalPP, span{
+    color:#DAA520;
+    font-family: 'Lora', serif;
+    font-size: 20px;
+}
+
+@media all and (max-width:800px){
+    .placement{
+        width:400px;
+    }
+    .billHeading, .peopleHeading{
+        font-size: 25px;
+    }
+    .billPerPerson, .tipsPerPerson, .totalPerPerson {
+    width:105px;
+    height:120px;
+    margin-right:2px;
+    }
+    .blocksheading{
+    font-size:20px;
+    }
+    .billPP, .tipsPP, .totalPP, span{
+    font-size:17px;
+    }
+}
+
+@media all and (max-width:500px){
+    h1{
+    font-size:45px;
+    }
+    .container{
+    
+    width:95%;
+    }
+    .placement{
+        width:300px;
+    }
+    .billHeading, .peopleHeading{
+        font-size: 20px;
+    }
+    .billPerPerson, .tipsPerPerson, .totalPerPerson {
+    width:70px;
+    height:120px;
+    margin-right:2px;
+    padding-bottom:15px;
+    }
+    .blocksheading{
+    font-size:19px;
+    margin-top:7px;
+    }
+    .billPP, .tipsPP, .totalPP, span{
+    font-size:15px;      
+    }
+    .calculate, .addTip{
+        width:75%;
+    }
+    .tip{
+        width:75%;
+    }
+    .bill, .people{
+        width:140px;
+    }
+}

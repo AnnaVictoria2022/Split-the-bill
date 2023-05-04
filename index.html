@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split the Bill</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="container">
+            <h1> Split the Bill</h1>
+            <div class="placement">
+                <div class="billAmount">
+                    <p class="billHeading">Bill</p>
+                    <input class="bill" type="text" placeholder="bill">
+                </div>    
+                <div class="numberOfPeople">
+                    <p class="peopleHeading">Number of People</p>
+                    <input class="people" type="text" placeholder="Number of People">
+                </div>
+            </div>
+            <button class="addTip"> Add a tip</button>
+                <select class="tip">
+                    <option disabled>Select tip %</option>
+                    <option selected value="0.00">No tip</option>
+                    <option value="0.15">Good service 15%</option>
+                    <option value="0.20">Above average 20%</option>
+                    <option value="0.30">Excellent service 30%</option>
+                </select>
+            <button class="calculate">Calculate</button>
+            <div class="results">
+                <div class="billPerPerson">
+                    <p class="blocksheading">Bill</p>
+                    <span>$</span>
+                    <span class="billPP"></span>
+                    <span>per person</span>
+                </div>
+                <div class="tipsPerPerson">
+                    <p class="blocksheading">Tips</p>
+                    <span>$</span>
+                    <span class="tipsPP"></span>
+                    <span>per person</span>
+                </div>
+                <div class="totalPerPerson">
+                    <p class="blocksheading">Total</p>
+                    <span>$</span>
+                    <span class="totalPP"></span>
+                    <span>per person</span>
+
+                </div>
+            </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
